@@ -1,0 +1,56 @@
+#api call for list vehicle
+
+###
+GET http://127.0.0.1:8000/vehicles/
+Accept: application/json
+
+
+#api call for create vehicle
+
+###
+POST http://127.0.0.1:8000/vehicles/ 
+Content-Type: application/json
+
+{
+    "name":"royal enfield",
+    "number":"kl-08-bu-6591",
+    "fuel_type":"petrol",
+    "owner_type":"second",
+    "running_km":-68000,
+    "price":100000,
+    "year":2021,
+    "phone":974509376
+}
+
+#api call for retrieve vehicle
+
+###
+GET http://127.0.0.1:8000/vehicles/2/
+Accept: application/json
+
+
+#api call for update vehicle
+
+###
+PUT http://127.0.0.1:8000/vehicles/2/
+Content-Type: application/json
+
+{
+    "name": "swift",
+    "number": "kl-02af-6465",
+    "fuel_type": "diesel",
+    "owner_type": "second",
+    "running_km": 120000.0,
+    "accident_history": true,
+    "price": 100000.0,
+    "year": "2014",
+    "phone":"9188396922",
+    "is_active": false
+}
+
+
+#api call for delete vehicle
+
+###
+DELETE http://127.0.0.1:8000/vehicles/2/
+Accept: application/json
